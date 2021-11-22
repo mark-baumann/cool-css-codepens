@@ -1,0 +1,31 @@
+body {
+    background: #a6e7ff; /* hintergrund*/ 
+    display: grid; 
+    place-items: center; /*items zentrieren*/
+  }
+  .menu {
+    background: #fff; /*hintergrund items menu*/
+    border-radius: 5px; /*rand vom menü abrunden*/
+    overflow: hidden; /*beide icons übereinadner */
+  }
+  .icons {
+    display: flex; /*alle items werden zentriert */ 
+  }
+   .icon { /*für jedes icon in icons element */
+    padding: 1.2rem 2rem; /*Abstand icons */
+    font-size: 1.3rem; /*größe icons*/
+    transition: transform 0.5s ease-in-out; /*animation wenn mouse zeiger */
+   
+  }
+  .icon spam { /*im spam element ist immer noch das gleiche element, das wird hier verändert*/
+    position: absolute; /*damit das rote element genau dahinter ist*/
+    padding: 20px 33px; 
+    left: 0;
+    top: 100%;
+    color: red; /*farbe rot */
+  }
+  .icon:hover {
+    transform: translateY(-100%); /*hover: wenn mousezeiger über element icon geht, translatey 100% weil wir das Element komplett ersetzen wollen */
+  }
+  
+  
